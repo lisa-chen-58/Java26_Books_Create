@@ -1,0 +1,28 @@
+// instructions for a new spring starter project
+    CREATE THE PROJECT
+        // Name = Aritfact -  should be camelCase
+        // Packaging - War
+        // Language - War
+        // Group = Package - com.user.projectname (ex. com.lisa.week3.daikichipathvariables)
+            // Next
+        // Select Spring Boot DevTools and Spring Web
+
+// src/main/java
+    packages com.lisa.template.controllers
+    packages com.lisa.template.models
+    packages com.lisa.template.repositories (has interfaces)
+    packages com.lisa.template.services
+
+// pom.xml SEE 1A_Dependencies
+    Preferences > Maven > Download repository index updates on startup checkbox should be clicked
+
+// src/main/resources/application.properties
+        ADD THE FOLLOWING TO THE application.properties file
+        spring.mvc.view.prefix=/WEB-INF/
+        #find your template in this WEB-INF folder
+
+    // CREATE THE WEBINF FOLDER
+        src/main/webapp             //this folder allows embedded Tomcat server to serve up to .jsp files
+        create WEB-INF folder       //serves up our jsp files
+        src/main/webapp/WEB-INF
+        create OTHER > JSP file > index.jsp 
